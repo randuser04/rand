@@ -77,7 +77,6 @@ void error() {
     t = -1;
 }
 
-
 OUTPUT
 
 The given grammar is:
