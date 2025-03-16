@@ -13,7 +13,7 @@ def remove_left_factoring(productions):
             beta1 = parts[0][i:] or "$"
             beta2 = parts[1][i:] or "$"
             print(f"{lhs}->{prefix}{lhs}'")
-            print(f"{lhs}'->{beta1}/{beta2}")
+            print(f"{lhs}'->{beta1}/{beta2}\n")
         else:
             print(f"No left factoring needed for '{prod}'")
 
@@ -21,3 +21,13 @@ def remove_left_factoring(productions):
 n = int(input("Enter the number of productions: "))
 productions = [input(f"Enter production {i+1}: ") for i in range(n)]
 remove_left_factoring(productions)
+
+
+Enter the number of productions: 2
+Enter production 1: A->aC/aD
+Enter production 2: B->aE/aF
+A->aA'
+A'->C/D
+
+B->aB'
+B'->E/F
