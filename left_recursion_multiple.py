@@ -18,7 +18,6 @@ n = int(input("Enter the number of productions: "))
 productions = [input(f"Enter production {i+1}: ") for i in range(n)]
 remove_left_recursion(productions)
 
-
 OUTPUT
 
 Enter the number of productions: 2
