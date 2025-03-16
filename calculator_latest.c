@@ -47,6 +47,7 @@ void yyerror() {
     printf("\nInvalid expression\n");
 }
 
+
 [OUTPUT]
  lex calc.l
  yacc -d calc.y
