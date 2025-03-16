@@ -13,3 +13,11 @@ def remove_left_recursion(prod):
 # Example usage
 prod = input("Enter the production: ")
 remove_left_recursion(prod)
+
+
+OUTPUT
+
+Enter the production: E->E+T/T
+Entered production is left recursive
+E->TE'
+E'->+TE'/$
