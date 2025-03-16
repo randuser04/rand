@@ -19,7 +19,6 @@ def remove_left_factoring(prod):
 prod = input("Enter production: ")
 remove_left_factoring(prod)
 
-
 OUTPUT
 
 Enter production: A->aB/aC
