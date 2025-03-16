@@ -1,9 +1,5 @@
 def remove_left_factoring(productions):
     for prod in productions:
-        if '->' not in prod:
-            print(f"The production '{prod}' is not in the correct format.")
-            continue
-        
         lhs, rhs = prod.split("->")
         parts = rhs.split("/")
         
